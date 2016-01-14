@@ -131,6 +131,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="t8D-cN-xJR"/>
                                 </connections>
                             </collectionView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="J7p-VV-oWf">
+                                <rect key="frame" x="23" y="460" width="554" height="31"/>
+                                <animations/>
+                            </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -139,11 +143,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ktx-xj-hDl" secondAttribute="bottom" id="GGf-Iw-vF0"/>
                             <constraint firstAttribute="trailing" secondItem="Ktx-xj-hDl" secondAttribute="trailing" id="K0K-8s-Hol"/>
                             <constraint firstAttribute="trailing" secondItem="ePP-sW-5mc" secondAttribute="trailing" constant="25" id="P9w-R8-CBG"/>
+                            <constraint firstItem="J7p-VV-oWf" firstAttribute="centerX" secondItem="ePP-sW-5mc" secondAttribute="centerX" id="PgL-YG-A8A"/>
                             <constraint firstItem="Ktx-xj-hDl" firstAttribute="top" secondItem="ePP-sW-5mc" secondAttribute="bottom" constant="60" id="cJJ-oX-FMA"/>
                             <constraint firstItem="ePP-sW-5mc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="gS4-Tp-0Zv"/>
+                            <constraint firstItem="J7p-VV-oWf" firstAttribute="width" secondItem="ePP-sW-5mc" secondAttribute="width" id="i5N-XK-Y4i"/>
                             <constraint firstItem="Ktx-xj-hDl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lnw-hI-YB6"/>
                             <constraint firstItem="ePP-sW-5mc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="oDs-ib-Ptk"/>
                             <constraint firstItem="Ktx-xj-hDl" firstAttribute="top" secondItem="ePP-sW-5mc" secondAttribute="bottom" constant="60" id="thU-c4-Wj0"/>
+                            <constraint firstItem="J7p-VV-oWf" firstAttribute="top" secondItem="ePP-sW-5mc" secondAttribute="bottom" constant="10" id="wVh-dD-Qz7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -155,11 +162,12 @@
                     <connections>
                         <outlet property="filterCollectionView" destination="Ktx-xj-hDl" id="dxH-PJ-xhc"/>
                         <outlet property="filterImageView" destination="ePP-sW-5mc" id="DF5-kU-KuR"/>
+                        <outlet property="filterSlide" destination="J7p-VV-oWf" id="pbT-9K-8rg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="294"/>
+            <point key="canvasLocation" x="924" y="283"/>
         </scene>
         <!--Trim View Controller-->
         <scene sceneID="9m1-KF-7EL">

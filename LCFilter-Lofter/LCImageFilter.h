@@ -12,14 +12,14 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  所要使用的滤镜风格（不可以私自调整枚举顺序）
+ *  所要使用的滤镜风格
  */
 typedef NS_ENUM(NSUInteger,LCOriginalFilter_Type) {
     LCOriginalFilter_Jane,//简
     LCOriginalFilter_SaltI,//盐I
     LCOriginalFilter_SaltII,//盐II
     LCOriginalFilter_SaltIII,//盐III
-    LCOriginalFilter_BlueOrGreen,//青
+    LCOriginalFilter_Cyan,//青
     LCOriginalFilter_Summer,//夏
     LCOriginalFilter_MoodGray,//情绪灰
     LCOriginalFilter_Dusk,//暮
@@ -27,17 +27,25 @@ typedef NS_ENUM(NSUInteger,LCOriginalFilter_Type) {
     LCOriginalFilter_InkI,//墨I
     LCOriginalFilter_InkII,//墨II
     LCOriginalFilter_InkIII,//墨III
-    LCOriginalFilter_SnowPear,//雪梨町
-    LCOriginalFilter_MasterI,//少爷D1
-    LCOriginalFilter_MasterII,//少爷D2
-    LCOriginalFilter_TwilightSnow,//暮雪R2
-    LCOriginalFilter_ConchShell,//海螺壳I
-    LCOriginalFilter_Dear,//亲切K
-    LCOriginalFilter_Seven,//七七V1
+    LCOriginalFilter_A1,//A1
+    LCOriginalFilter_A5,//A5
+    LCOriginalFilter_A6,//A6
+    LCOriginalFilter_A7,//A7
+    LCOriginalFilter_A8,//A8
+    LCOriginalFilter_M5,//M5
+    LCOriginalFilter_J6,//J6
+    LCOriginalFilter_N1,//N1
+    LCOriginalFilter_HB1,//HB1
+    LCOriginalFilter_KK1,//KK1
+    LCOriginalFilter_T1,//T1
+    LCOriginalFilter_H5,//H5
+    LCOriginalFilter_SE1,//SE1
+    LCOriginalFilter_F2,//F2
+    
     
 };
 /**
- *  所要使用的微调风格（不可以私自调整枚举顺序）
+ *  所要使用的微调风格
  */
 typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
     LCOriginalTrim_ColorTemp,//色温
@@ -67,7 +75,7 @@ typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
 @interface LCImageFilter : NSObject
 
 /**
- *  输入原图和要使用的滤镜，返回效果图
+ *  输入原图和要使用的滤镜，返回效果图,主线程
  *
  *  @param originImage      原图
  *  @param originFilterType 效果
@@ -79,9 +87,23 @@ typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
           withDefaultFilter:(LCOriginalFilter_Type)originFilterType
                        size:(CGSize )size
                       ratio:(CGFloat)ratio;
+/**
+ *  输入原图和要使用的滤镜，返回效果图,在子线程中处理，回调在主线程
+ *
+ *  @param originImage      原图
+ *  @param originFilterType 效果
+ *  @param size             用作缩略图处理，返回原尺寸传入CGSizeZero
+ *  @param ratio            滤镜的强度(0-1)
+ *  @return 效果图
+ */
++(void)filtOriginImage:(UIImage *)originImage
+          withDefaultFilter:(LCOriginalFilter_Type)originFilterType
+                       size:(CGSize )size
+                      ratio:(CGFloat)ratio
+       completionBlock:(void(^)(UIImage *result))competionBlock;
 
 /**
- *  输入原图和要使用的微调选项，返回效果图
+ *  输入原图和要使用的微调选项，返回效果图，主线程
  *
  *  @param originImage      原图
  *  @param originFilterType 效果
@@ -93,11 +115,39 @@ typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
           withDefaultTrim:(LCOriginalTrim_Type)originFilterType
                        size:(CGSize )size
                       ratio:(CGFloat)ratio;
-//旋转，逆时针为正，顺时针为负
-//弧度制旋转
-+ (UIImage*)rotateInRadians:(float)radians originImage:(UIImage *)image;
-//角度制旋转
-+ (UIImage*)rotateInDegrees:(float)degrees originImage:(UIImage *)image;
+/**
+ *  输入原图和要使用的微调选项，返回效果图，子线程处理，回调在主线程
+ *
+ *  @param originImage      原图
+ *  @param originFilterType 效果
+ *  @param size             用作缩略图处理，返回原尺寸传入CGSizeZero
+ *  @param ratio            微调的的强度(-1到1)
+ *  @return 效果图
+ */
++(void)trimOriginImage:(UIImage *)originImage
+            withDefaultTrim:(LCOriginalTrim_Type)originFilterType
+                       size:(CGSize )size
+                      ratio:(CGFloat)ratio
+            completionBlock:(void(^)(UIImage *result))competionBlock;
+
+/**
+ Returns a new rotated image (relative to the center).
+ 
+ @param radians   Rotated radians in counterclockwise.⟲
+ @param image   the image will be rotated
+ @param fitSize   YES: new image's size is extend to fit all content.
+                  NO: image's size will not change, content may be clipped.
+ */
++ (UIImage *)rotateInRadian:(CGFloat)radians image:(UIImage *)image fitSize:(BOOL)fitSize;
+/**
+ Returns a new rotated image (relative to the center).
+ 
+ @param degree   Rotated degree in counterclockwise.⟲
+ @param image   the image will be rotated
+ @param fitSize  YES: new image's size is extend to fit all content.
+                  NO: image's size will not change, content may be clipped.
+ */
++ (UIImage *)rotateInDegree:(CGFloat)degree image:(UIImage *)image fitSize:(BOOL)fitSize;
 //剪切按照尺寸
 + (UIImage *)cropToRect:(CGRect)newRect originImage:(UIImage *)image;
 //剪切按照比例ratioRect(0-1),如（0.1，0.2，0.5，0.6）

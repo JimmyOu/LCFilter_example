@@ -25,7 +25,7 @@
         case LCOriginalFilter_SaltIII:
             _filterName.text = @"盐III";
             break;
-        case LCOriginalFilter_BlueOrGreen:
+        case LCOriginalFilter_Cyan:
             _filterName.text = @"青";
             break;
         case LCOriginalFilter_Summer:
@@ -49,32 +49,54 @@
         case LCOriginalFilter_InkIII:
             _filterName.text = @"墨III";
             break;
-        case LCOriginalFilter_SnowPear:
-            _filterName.text = @"雪梨町";
+        case LCOriginalFilter_A1:
+            _filterName.text = @"A1";
             break;
-        case LCOriginalFilter_MasterI:
-            _filterName.text = @"少爷D1";
+        case LCOriginalFilter_A5:
+            _filterName.text = @"A5";
             break;
-        case LCOriginalFilter_MasterII:
-            _filterName.text = @"少爷D2";
+        case LCOriginalFilter_A6:
+            _filterName.text = @"A6";
             break;
-        case LCOriginalFilter_TwilightSnow:
-            _filterName.text = @"暮雪R2";
+        case LCOriginalFilter_A7:
+            _filterName.text = @"A7";
             break;
-        case LCOriginalFilter_ConchShell:
-            _filterName.text = @"海螺壳I";
+        case LCOriginalFilter_A8:
+            _filterName.text = @"A8";
             break;
-        case LCOriginalFilter_Dear:
-            _filterName.text = @"亲切K";
+        case LCOriginalFilter_M5:
+            _filterName.text = @"M5";
             break;
-        case LCOriginalFilter_Seven:
-            _filterName.text = @"七七V1";
+        case LCOriginalFilter_J6:
+            _filterName.text = @"J6";
             break;
-            
+        case LCOriginalFilter_N1:
+            _filterName.text =@"N1";
+            break;
+        case LCOriginalFilter_HB1:
+            _filterName.text =@"HB1";
+            break;
+        case LCOriginalFilter_KK1:
+            _filterName.text =@"KK1";
+            break;
+        case LCOriginalFilter_T1:
+            _filterName.text =@"T1";
+            break;
+        case LCOriginalFilter_H5:
+            _filterName.text =@"H5";
+            break;
+        case LCOriginalFilter_SE1:
+            _filterName.text =@"SE1";
+            break;
+        case LCOriginalFilter_F2:
+            _filterName.text =@"F2";
+            break;
         default:
             break;
     }
     
 
 }
+
+
 @end

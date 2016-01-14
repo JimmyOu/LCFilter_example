@@ -22,24 +22,35 @@
     NSCache *_cache;
     NSInteger _selectedTrim;
 }
-- (void)awakeFromNib{
-    [super awakeFromNib];
-     _originImage = [UIImage imageNamed:@"originImage"];
-    _trimmedImage = _originImage;
-}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _originImage = [UIImage imageNamed:@"originImage.png"];
 
-    [self.trimSlider addTarget:self action:@selector(trimSliderChanged:) forControlEvents:UIControlEventValueChanged];
-    
-    
-    
+    _trimmedImage = _originImage;
+    self.trimSlider.continuous = NO;
+    [self.trimSlider addTarget:self action:@selector(trimSliderChanged:) forControlEvents:UIControlEventTouchUpInside];
+
+   
+
 }
+
 - (void)trimSliderChanged:(UISlider *)slider{
-    UIImage *editingImage = [LCImageFilter trimOriginImage:_originImage withDefaultTrim:_selectedTrim size:CGSizeZero ratio:self.trimSlider.value];
-//    UIImage *editingImage2 = [LCImageFilter rotateInRadians:M_PI*self.trimSlider.value originImage:editingImage];
-//    UIImage *editingImage2 = [LCImageFilter cropToRatioRect:CGRectMake(-1, 0.2, 0.5, 0.7) originImage:editingImage];
-    self.originImageView.image = editingImage;
+
+
+    [LCImageFilter trimOriginImage:_originImage
+                   withDefaultTrim:_selectedTrim
+                              size:CGSizeZero
+                             ratio:slider.value
+                   completionBlock:^(UIImage *result) {
+                       _originImageView.image = result;
+
+
+                   }];
+//    self.originImageView.image = [LCImageFilter rotateInRadian:slider.value*M_PI image:_originImage fitSize:NO];
+//    self.originImageView.image = [LCImageFilter cropToRatioRect:CGRectMake(0, 0, 1000, 1000) originImage:_originImage];
+
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 23;
@@ -47,28 +58,56 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     TrimCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TrimCollectionViewCell" forIndexPath:indexPath];
     LCOriginalTrim_Type type = indexPath.row;
-    [cell configureCellWithIndexPath:type withImage:[self getImageFromCache:type]];
+    [self getCacheImageWithType:type completionBlock:^(UIImage *result) {
+        [cell configureCellWithIndexPath:type withImage:result];
+    }];
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    _originImageView.image = [LCImageFilter trimOriginImage:_originImage withDefaultTrim:indexPath.row size:CGSizeZero ratio:self.trimSlider.value];
+    [LCImageFilter trimOriginImage:_originImage
+                   withDefaultTrim:indexPath.row
+                              size:CGSizeZero
+                             ratio:0.3
+                   completionBlock:^(UIImage *result) {
+        _originImageView.image = result;
+    }];
     _selectedTrim = indexPath.row;
     
 }
 
-- (UIImage *)getImageFromCache:(LCOriginalTrim_Type )type{
+
+//- (void)getCacheImageWithType:(LCOriginalTrim_Type)type completionBlock:(void(^)(UIImage *result))completionBlock{
+//    if (!_cache) {
+//        _cache = [NSCache new];
+//    }
+//   __block UIImage *resultImage = [_cache objectForKey:[NSString stringWithFormat:@"%d",type]];
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        if (!resultImage) {
+//            resultImage = [LCImageFilter trimOriginImage:_originImage withDefaultTrim:type size:CGSizeMake(60, 60) ratio:1];
+//            [_cache setObject:resultImage forKey:[NSString stringWithFormat:@"%d",type]];
+//        }
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (completionBlock) {
+//                completionBlock(resultImage);
+//            }
+//        });
+//    });
+//    
+//}
+
+- (void)getCacheImageWithType:(LCOriginalTrim_Type)type completionBlock:(void(^)(UIImage *result))completionBlock{
     if (!_cache) {
         _cache = [NSCache new];
     }
-    UIImage *result = nil;
-    result = [_cache objectForKey:[NSNumber numberWithUnsignedInteger:type]];
-    if (!result) {
-        result = [LCImageFilter trimOriginImage:_originImage withDefaultTrim:type size:CGSizeMake(60, 60) ratio:0.3];
-        [_cache setObject:result forKey:[NSNumber numberWithUnsignedInteger:type]];
-    }
-
-    return result;
+    UIImage *resultImage = [_cache objectForKey:[NSString stringWithFormat:@"%d",type]];
+    if (!resultImage) {
+            resultImage = [LCImageFilter trimOriginImage:_originImage withDefaultTrim:type size:CGSizeMake(60, 60) ratio:1];
+            [_cache setObject:resultImage forKey:[NSString stringWithFormat:@"%d",type]];
+        }
+        if (completionBlock) {
+                completionBlock(resultImage);
+            }
+    
 }
-
 
 @end

@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9D0AAC51C3A0C740018FE8C /* 200.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A9D0AAC41C3A0C740018FE8C /* 200.jpeg */; };
+		A9D0AAC71C3A0D1B0018FE8C /* originImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D0AAC61C3A0D1B0018FE8C /* originImage.png */; };
+		E6157A921C3E37D2009FDD19 /* .DS_Store in Resources */ = {isa = PBXBuildFile; fileRef = E6157A8D1C3E37D2009FDD19 /* .DS_Store */; };
+		E638FB2C1C30E20200EAD72B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E638FB2B1C30E20200EAD72B /* main.m */; };
+		E638FB2F1C30E20200EAD72B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E638FB2E1C30E20200EAD72B /* AppDelegate.m */; };
+		E638FB351C30E20200EAD72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E638FB331C30E20200EAD72B /* Main.storyboard */; };
+		E638FB371C30E20200EAD72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E638FB361C30E20200EAD72B /* Assets.xcassets */; };
+		E638FB3A1C30E20200EAD72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E638FB381C30E20200EAD72B /* LaunchScreen.storyboard */; };
+		E638FD4D1C30E49500EAD72B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E638FD4C1C30E49500EAD72B /* QuartzCore.framework */; };
+		E638FD4F1C30E4E300EAD72B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E638FD4E1C30E4E300EAD72B /* AVFoundation.framework */; };
+		E638FD511C30E4EE00EAD72B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E638FD501C30E4EE00EAD72B /* OpenGLES.framework */; };
+		E638FD531C30E4F900EAD72B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E638FD521C30E4F900EAD72B /* CoreVideo.framework */; };
+		E638FD551C30E50500EAD72B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E638FD541C30E50500EAD72B /* CoreMedia.framework */; };
+		E6AC46291C322CBA00744844 /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46221C322CBA00744844 /* FilterCollectionViewCell.m */; };
+		E6AC462A1C322CBA00744844 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46241C322CBA00744844 /* FilterViewController.m */; };
+		E6AC462C1C322CBA00744844 /* TrimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46281C322CBA00744844 /* TrimViewController.m */; };
+		E6AC46611C32819700744844 /* TrimCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46601C32819700744844 /* TrimCollectionViewCell.m */; };
+		E6EB86ED1C4799CB00803FE4 /* ios_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */; };
+		E6EB86EE1C4799CB00803FE4 /* LCFilterResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */; };
+		E6EB86EF1C4799CB00803FE4 /* os_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6157AA71C3E3CAE009FDD19 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9D0AAC41C3A0C740018FE8C /* 200.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 200.jpeg; sourceTree = "<group>"; };
+		A9D0AAC61C3A0D1B0018FE8C /* originImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = originImage.png; sourceTree = "<group>"; };
+		E6157A8D1C3E37D2009FDD19 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		E638FB271C30E20200EAD72B /* LCFilter-Lofter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LCFilter-Lofter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E638FB2B1C30E20200EAD72B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E638FB2D1C30E20200EAD72B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E638FB2E1C30E20200EAD72B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E638FB341C30E20200EAD72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E638FB361C30E20200EAD72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E638FB391C30E20200EAD72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E638FB3B1C30E20200EAD72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E638FD4C1C30E49500EAD72B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E638FD4E1C30E4E300EAD72B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E638FD501C30E4EE00EAD72B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E638FD521C30E4F900EAD72B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E638FD541C30E50500EAD72B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E6AC46211C322CBA00744844 /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		E6AC46221C322CBA00744844 /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		E6AC46231C322CBA00744844 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		E6AC46241C322CBA00744844 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		E6AC46271C322CBA00744844 /* TrimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrimViewController.h; sourceTree = "<group>"; };
+		E6AC46281C322CBA00744844 /* TrimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrimViewController.m; sourceTree = "<group>"; };
+		E6AC465F1C32819700744844 /* TrimCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrimCollectionViewCell.h; sourceTree = "<group>"; };
+		E6AC46601C32819700744844 /* TrimCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrimCollectionViewCell.m; sourceTree = "<group>"; };
+		E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ios_LCFilter_SDK.a; sourceTree = "<group>"; };
+		E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCFilterResources.bundle; sourceTree = "<group>"; };
+		E6EB86EB1C4799CB00803FE4 /* LCImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCImageFilter.h; sourceTree = "<group>"; };
+		E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = os_LCFilter_SDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E638FB241C30E20200EAD72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E638FD551C30E50500EAD72B /* CoreMedia.framework in Frameworks */,
+				E638FD531C30E4F900EAD72B /* CoreVideo.framework in Frameworks */,
+				E638FD511C30E4EE00EAD72B /* OpenGLES.framework in Frameworks */,
+				E6EB86ED1C4799CB00803FE4 /* ios_LCFilter_SDK.a in Frameworks */,
+				E638FD4F1C30E4E300EAD72B /* AVFoundation.framework in Frameworks */,
+				E6EB86EF1C4799CB00803FE4 /* os_LCFilter_SDK.a in Frameworks */,
+				E638FD4D1C30E49500EAD72B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E638FB1E1C30E20200EAD72B = {
+			isa = PBXGroup;
+			children = (
+				E638FB291C30E20200EAD72B /* LCFilter-Lofter */,
+				E638FB281C30E20200EAD72B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E638FB281C30E20200EAD72B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E638FB271C30E20200EAD72B /* LCFilter-Lofter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E638FB291C30E20200EAD72B /* LCFilter-Lofter */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */,
+				E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */,
+				E6EB86EB1C4799CB00803FE4 /* LCImageFilter.h */,
+				E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */,
+				E638FD4B1C30E44000EAD72B /* Framework */,
+				E6AC46201C322CBA00744844 /* TestFilter */,
+				E6AC46261C322CBA00744844 /* TextTrim */,
+				E638FB2D1C30E20200EAD72B /* AppDelegate.h */,
+				E638FB2E1C30E20200EAD72B /* AppDelegate.m */,
+				E638FB331C30E20200EAD72B /* Main.storyboard */,
+				E638FB361C30E20200EAD72B /* Assets.xcassets */,
+				E638FB381C30E20200EAD72B /* LaunchScreen.storyboard */,
+				E638FB3B1C30E20200EAD72B /* Info.plist */,
+				E638FB2A1C30E20200EAD72B /* Supporting Files */,
+			);
+			path = "LCFilter-Lofter";
+			sourceTree = "<group>";
+		};
+		E638FB2A1C30E20200EAD72B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E638FB2B1C30E20200EAD72B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E638FD4B1C30E44000EAD72B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E638FD541C30E50500EAD72B /* CoreMedia.framework */,
+				E638FD521C30E4F900EAD72B /* CoreVideo.framework */,
+				E638FD501C30E4EE00EAD72B /* OpenGLES.framework */,
+				E638FD4E1C30E4E300EAD72B /* AVFoundation.framework */,
+				E638FD4C1C30E49500EAD72B /* QuartzCore.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		E6AC46201C322CBA00744844 /* TestFilter */ = {
+			isa = PBXGroup;
+			children = (
+				E6157A8D1C3E37D2009FDD19 /* .DS_Store */,
+				E6AC46211C322CBA00744844 /* FilterCollectionViewCell.h */,
+				E6AC46221C322CBA00744844 /* FilterCollectionViewCell.m */,
+				E6AC46231C322CBA00744844 /* FilterViewController.h */,
+				E6AC46241C322CBA00744844 /* FilterViewController.m */,
+				A9D0AAC61C3A0D1B0018FE8C /* originImage.png */,
+				A9D0AAC41C3A0C740018FE8C /* 200.jpeg */,
+			);
+			path = TestFilter;
+			sourceTree = "<group>";
+		};
+		E6AC46261C322CBA00744844 /* TextTrim */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC46271C322CBA00744844 /* TrimViewController.h */,
+				E6AC46281C322CBA00744844 /* TrimViewController.m */,
+				E6AC465F1C32819700744844 /* TrimCollectionViewCell.h */,
+				E6AC46601C32819700744844 /* TrimCollectionViewCell.m */,
+			);
+			path = TextTrim;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E638FB261C30E20200EAD72B /* LCFilter-Lofter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E638FB3E1C30E20200EAD72B /* Build configuration list for PBXNativeTarget "LCFilter-Lofter" */;
+			buildPhases = (
+				E638FB231C30E20200EAD72B /* Sources */,
+				E638FB241C30E20200EAD72B /* Frameworks */,
+				E638FB251C30E20200EAD72B /* Resources */,
+				E6157AA71C3E3CAE009FDD19 /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LCFilter-Lofter";
+			productName = "LCFilter-Lofter";
+			productReference = E638FB271C30E20200EAD72B /* LCFilter-Lofter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E638FB1F1C30E20200EAD72B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NetEase;
+				TargetAttributes = {
+					E638FB261C30E20200EAD72B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3G8QFYT436;
+					};
+				};
+			};
+			buildConfigurationList = E638FB221C30E20200EAD72B /* Build configuration list for PBXProject "LCFilter-Lofter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E638FB1E1C30E20200EAD72B;
+			productRefGroup = E638FB281C30E20200EAD72B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E638FB261C30E20200EAD72B /* LCFilter-Lofter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E638FB251C30E20200EAD72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D0AAC71C3A0D1B0018FE8C /* originImage.png in Resources */,
+				A9D0AAC51C3A0C740018FE8C /* 200.jpeg in Resources */,
+				E6EB86EE1C4799CB00803FE4 /* LCFilterResources.bundle in Resources */,
+				E638FB3A1C30E20200EAD72B /* LaunchScreen.storyboard in Resources */,
+				E638FB371C30E20200EAD72B /* Assets.xcassets in Resources */,
+				E6157A921C3E37D2009FDD19 /* .DS_Store in Resources */,
+				E638FB351C30E20200EAD72B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E638FB231C30E20200EAD72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AC46291C322CBA00744844 /* FilterCollectionViewCell.m in Sources */,
+				E6AC462C1C322CBA00744844 /* TrimViewController.m in Sources */,
+				E638FB2F1C30E20200EAD72B /* AppDelegate.m in Sources */,
+				E6AC46611C32819700744844 /* TrimCollectionViewCell.m in Sources */,
+				E638FB2C1C30E20200EAD72B /* main.m in Sources */,
+				E6AC462A1C322CBA00744844 /* FilterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E638FB331C30E20200EAD72B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E638FB341C30E20200EAD72B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E638FB381C30E20200EAD72B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E638FB391C30E20200EAD72B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E638FB3C1C30E20200EAD72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E638FB3D1C30E20200EAD72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E638FB3F1C30E20200EAD72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "LCFilter-Lofter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LCFilter-Lofter",
+					"$(PROJECT_DIR)/LCFilter-Lofter/TestFilter",
+					"$(PROJECT_DIR)/LCFilter-Lofter/LCFilter_SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Netease.LCFilter-Lofter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E638FB401C30E20200EAD72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
+				INFOPLIST_FILE = "LCFilter-Lofter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LCFilter-Lofter",
+					"$(PROJECT_DIR)/LCFilter-Lofter/TestFilter",
+					"$(PROJECT_DIR)/LCFilter-Lofter/LCFilter_SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Netease.LCFilter-Lofter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E638FB221C30E20200EAD72B /* Build configuration list for PBXProject "LCFilter-Lofter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E638FB3C1C30E20200EAD72B /* Debug */,
+				E638FB3D1C30E20200EAD72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E638FB3E1C30E20200EAD72B /* Build configuration list for PBXNativeTarget "LCFilter-Lofter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E638FB3F1C30E20200EAD72B /* Debug */,
+				E638FB401C30E20200EAD72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E638FB1F1C30E20200EAD72B /* Project object */;
+}

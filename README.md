@@ -1,6 +1,5 @@
 # LCFilter_example
 滤镜处理的示例程序
-
 #使用
 添加框架 **QuartzCore、AVFoundation、OpenGLES、CoreVideo、CoreMedia** ，将 **LCFilter_Demo / LCFilter-Lofter / SDK/** 中的文件添加到工程中
 

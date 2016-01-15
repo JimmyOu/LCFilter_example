@@ -1,5 +1,7 @@
 # LCFilter_example
+===
 滤镜处理的示例程序
+----
 #使用
 添加框架 **QuartzCore、AVFoundation、OpenGLES、CoreVideo、CoreMedia** ，将 **LCFilter_Demo / LCFilter-Lofter / SDK/** 中的文件添加到工程中
 
@@ -8,31 +10,57 @@
 
 typedef NS_ENUM(NSUInteger,LCOriginalFilter_Type) {
 LCOriginalFilter_Jane,//简
+
 LCOriginalFilter_SaltI,//盐I
+
 LCOriginalFilter_SaltII,//盐II
+
 LCOriginalFilter_SaltIII,//盐III
+
 LCOriginalFilter_Cyan,//青
+
 LCOriginalFilter_Summer,//夏
+
 LCOriginalFilter_MoodGray,//情绪灰
+
 LCOriginalFilter_Dusk,//暮
+
 LCOriginalFilter_Firefly,//萤
+
 LCOriginalFilter_InkI,//墨I
+
 LCOriginalFilter_InkII,//墨II
+
 LCOriginalFilter_InkIII,//墨III
+
 LCOriginalFilter_A1,//A1
+
 LCOriginalFilter_A5,//A5
+
 LCOriginalFilter_A6,//A6
+
 LCOriginalFilter_A7,//A7
+
 LCOriginalFilter_A8,//A8
+
 LCOriginalFilter_M5,//M5
+
 LCOriginalFilter_J6,//J6
+
 LCOriginalFilter_N1,//N1
+
 LCOriginalFilter_HB1,//HB1
+
 LCOriginalFilter_KK1,//KK1
+
 LCOriginalFilter_T1,//T1
+
 LCOriginalFilter_H5,//H5
+
 LCOriginalFilter_SE1,//SE1
+
 LCOriginalFilter_F2,//F2
+
 };
 
 #支持的微调效果

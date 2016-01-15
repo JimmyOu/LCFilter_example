@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B46E6A1C479E5300E05D2F /* ios_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B46E661C479E5300E05D2F /* ios_LCFilter_SDK.a */; };
+		A9B46E6B1C479E5300E05D2F /* LCFilterResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9B46E671C479E5300E05D2F /* LCFilterResources.bundle */; };
+		A9B46E6C1C479E5300E05D2F /* simulator_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B46E691C479E5300E05D2F /* simulator_LCFilter_SDK.a */; };
 		A9D0AAC51C3A0C740018FE8C /* 200.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A9D0AAC41C3A0C740018FE8C /* 200.jpeg */; };
 		A9D0AAC71C3A0D1B0018FE8C /* originImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D0AAC61C3A0D1B0018FE8C /* originImage.png */; };
 		E6157A921C3E37D2009FDD19 /* .DS_Store in Resources */ = {isa = PBXBuildFile; fileRef = E6157A8D1C3E37D2009FDD19 /* .DS_Store */; };
@@ -24,9 +27,6 @@
 		E6AC462A1C322CBA00744844 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46241C322CBA00744844 /* FilterViewController.m */; };
 		E6AC462C1C322CBA00744844 /* TrimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46281C322CBA00744844 /* TrimViewController.m */; };
 		E6AC46611C32819700744844 /* TrimCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AC46601C32819700744844 /* TrimCollectionViewCell.m */; };
-		E6EB86ED1C4799CB00803FE4 /* ios_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */; };
-		E6EB86EE1C4799CB00803FE4 /* LCFilterResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */; };
-		E6EB86EF1C4799CB00803FE4 /* os_LCFilter_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +43,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A9B46E661C479E5300E05D2F /* ios_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ios_LCFilter_SDK.a; sourceTree = "<group>"; };
+		A9B46E671C479E5300E05D2F /* LCFilterResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCFilterResources.bundle; sourceTree = "<group>"; };
+		A9B46E681C479E5300E05D2F /* LCImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCImageFilter.h; sourceTree = "<group>"; };
+		A9B46E691C479E5300E05D2F /* simulator_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = simulator_LCFilter_SDK.a; sourceTree = "<group>"; };
 		A9D0AAC41C3A0C740018FE8C /* 200.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 200.jpeg; sourceTree = "<group>"; };
 		A9D0AAC61C3A0D1B0018FE8C /* originImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = originImage.png; sourceTree = "<group>"; };
 		E6157A8D1C3E37D2009FDD19 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
@@ -67,10 +71,6 @@
 		E6AC46281C322CBA00744844 /* TrimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrimViewController.m; sourceTree = "<group>"; };
 		E6AC465F1C32819700744844 /* TrimCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrimCollectionViewCell.h; sourceTree = "<group>"; };
 		E6AC46601C32819700744844 /* TrimCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrimCollectionViewCell.m; sourceTree = "<group>"; };
-		E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ios_LCFilter_SDK.a; sourceTree = "<group>"; };
-		E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCFilterResources.bundle; sourceTree = "<group>"; };
-		E6EB86EB1C4799CB00803FE4 /* LCImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCImageFilter.h; sourceTree = "<group>"; };
-		E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = os_LCFilter_SDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +80,10 @@
 			files = (
 				E638FD551C30E50500EAD72B /* CoreMedia.framework in Frameworks */,
 				E638FD531C30E4F900EAD72B /* CoreVideo.framework in Frameworks */,
+				A9B46E6C1C479E5300E05D2F /* simulator_LCFilter_SDK.a in Frameworks */,
 				E638FD511C30E4EE00EAD72B /* OpenGLES.framework in Frameworks */,
-				E6EB86ED1C4799CB00803FE4 /* ios_LCFilter_SDK.a in Frameworks */,
+				A9B46E6A1C479E5300E05D2F /* ios_LCFilter_SDK.a in Frameworks */,
 				E638FD4F1C30E4E300EAD72B /* AVFoundation.framework in Frameworks */,
-				E6EB86EF1C4799CB00803FE4 /* os_LCFilter_SDK.a in Frameworks */,
 				E638FD4D1C30E49500EAD72B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9B46E651C479E5300E05D2F /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				A9B46E681C479E5300E05D2F /* LCImageFilter.h */,
+				A9B46E661C479E5300E05D2F /* ios_LCFilter_SDK.a */,
+				A9B46E691C479E5300E05D2F /* simulator_LCFilter_SDK.a */,
+				A9B46E671C479E5300E05D2F /* LCFilterResources.bundle */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
 		E638FB1E1C30E20200EAD72B = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +121,7 @@
 		E638FB291C30E20200EAD72B /* LCFilter-Lofter */ = {
 			isa = PBXGroup;
 			children = (
-				E6EB86E91C4799CB00803FE4 /* ios_LCFilter_SDK.a */,
-				E6EB86EA1C4799CB00803FE4 /* LCFilterResources.bundle */,
-				E6EB86EB1C4799CB00803FE4 /* LCImageFilter.h */,
-				E6EB86EC1C4799CB00803FE4 /* os_LCFilter_SDK.a */,
+				A9B46E651C479E5300E05D2F /* SDK */,
 				E638FD4B1C30E44000EAD72B /* Framework */,
 				E6AC46201C322CBA00744844 /* TestFilter */,
 				E6AC46261C322CBA00744844 /* TextTrim */,
@@ -205,7 +213,7 @@
 				TargetAttributes = {
 					E638FB261C30E20200EAD72B = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 3G8QFYT436;
+						DevelopmentTeam = WMSS77X69Q;
 					};
 				};
 			};
@@ -234,7 +242,7 @@
 			files = (
 				A9D0AAC71C3A0D1B0018FE8C /* originImage.png in Resources */,
 				A9D0AAC51C3A0C740018FE8C /* 200.jpeg in Resources */,
-				E6EB86EE1C4799CB00803FE4 /* LCFilterResources.bundle in Resources */,
+				A9B46E6B1C479E5300E05D2F /* LCFilterResources.bundle in Resources */,
 				E638FB3A1C30E20200EAD72B /* LaunchScreen.storyboard in Resources */,
 				E638FB371C30E20200EAD72B /* Assets.xcassets in Resources */,
 				E6157A921C3E37D2009FDD19 /* .DS_Store in Resources */,
@@ -375,6 +383,7 @@
 					"$(PROJECT_DIR)/LCFilter-Lofter",
 					"$(PROJECT_DIR)/LCFilter-Lofter/TestFilter",
 					"$(PROJECT_DIR)/LCFilter-Lofter/LCFilter_SDK",
+					"$(PROJECT_DIR)/LCFilter-Lofter/SDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Netease.LCFilter-Lofter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +405,7 @@
 					"$(PROJECT_DIR)/LCFilter-Lofter",
 					"$(PROJECT_DIR)/LCFilter-Lofter/TestFilter",
 					"$(PROJECT_DIR)/LCFilter-Lofter/LCFilter_SDK",
+					"$(PROJECT_DIR)/LCFilter-Lofter/SDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Netease.LCFilter-Lofter";
 				PRODUCT_NAME = "$(TARGET_NAME)";

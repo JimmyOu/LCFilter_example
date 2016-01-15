@@ -41,8 +41,6 @@ typedef NS_ENUM(NSUInteger,LCOriginalFilter_Type) {
     LCOriginalFilter_H5,//H5
     LCOriginalFilter_SE1,//SE1
     LCOriginalFilter_F2,//F2
-    
-    
 };
 /**
  *  所要使用的微调风格
@@ -139,6 +137,7 @@ typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
                   NO: image's size will not change, content may be clipped.
  */
 + (UIImage *)rotateInRadian:(CGFloat)radians image:(UIImage *)image fitSize:(BOOL)fitSize;
+
 /**
  Returns a new rotated image (relative to the center).
  
@@ -148,8 +147,10 @@ typedef NS_ENUM(NSUInteger,LCOriginalTrim_Type) {
                   NO: image's size will not change, content may be clipped.
  */
 + (UIImage *)rotateInDegree:(CGFloat)degree image:(UIImage *)image fitSize:(BOOL)fitSize;
+
 //剪切按照尺寸
 + (UIImage *)cropToRect:(CGRect)newRect originImage:(UIImage *)image;
+
 //剪切按照比例ratioRect(0-1),如（0.1，0.2，0.5，0.6）
 + (UIImage *)cropToRatioRect:(CGRect)ratioRect originImage:(UIImage *)image;
 @end

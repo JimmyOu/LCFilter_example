@@ -46,9 +46,9 @@
         case LCOriginalFilter_InkII:
             _filterName.text = @"墨II";
             break;
-        case LCOriginalFilter_InkIII:
-            _filterName.text = @"墨III";
-            break;
+//        case LCOriginalFilter_InkIII:
+//            _filterName.text = @"墨III";
+//            break;
         case LCOriginalFilter_A1:
             _filterName.text = @"A1";
             break;
